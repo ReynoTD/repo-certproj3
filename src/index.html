@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python-Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentación</header>
+      <!---->
+
+      <ul class="sidebar-menu">
+        <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
+        <li>
+          <a
+            class="nav-link"
+            href="#Lo_que_Debes_Saber_para_Usar_Esta_Documentacion"
+            >Lo que Debes Saber para Usar Esta Documentacion</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Tutoriales_Practicos"
+            >Tutoriales Practicos</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Ejemplos_de_Codigo">Ejemplos de Codigo</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Guias_para_Resolver_Problemas_Comunes"
+            >Guias para Resolver Problemas Comunes</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Referencias">Referencias</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduccion">
+        <header>Introduccion</header>
+        <article>
+          <p>
+            Python es un lenguaje de programación de alto nivel, interpretado y
+            de propósito general. Fue creado por Guido van Rossum y lanzado por
+            primera vez en 1991. Python enfatiza la legibilidad del código y su
+            sintaxis permite a los programadores expresar conceptos en menos
+            líneas de código en comparación con otros lenguajes de programación
+            como C++ o Java.
+          </p>
+          <p>
+            Python se utiliza en una variedad de aplicaciones, incluyendo
+            desarrollo web, análisis de datos, inteligencia artificial,
+            automatización de tareas, y más. Su vasta colección de bibliotecas y
+            frameworks lo hace una herramienta muy versátil para desarrolladores
+            de todos los niveles.
+          </p>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Lo_que_Debes_Saber_para_Usar_Esta_Documentacion"
+      >
+        <header>Lo que Debes Saber para Usar Esta Documentacion</header>
+        <article>
+          <p>
+            Esta documentación está diseñada para ser una guía práctica y
+            accesible para cualquier persona interesada en aprender y utilizar
+            Python. Para aprovechar al máximo esta documentación, se recomienda
+            tener:
+          </p>
+          <ul>
+            <li>
+              Conocimientos básicos de programación: Aunque Python es conocido
+              por su facilidad de uso, es útil tener una comprensión básica de
+              conceptos de programación como variables, estructuras de control
+              de flujo (bucles y condicionales), y funciones.
+            </li>
+            <li>
+              Entorno de desarrollo preparado: Tener instalado Python en tu
+              máquina, junto con un editor de texto o un entorno de desarrollo
+              integrado (IDE) como PyCharm, Visual Studio Code, o Jupyter
+              Notebook.
+            </li>
+          </ul>
+        </article>
+        <section class="main-section" id="Tutoriales_Practicos">
+          <header>Tutoriales Practicos</header>
+          <section class="secondary-section">
+            <header>Instalación de Python</header>
+            <p>En Windows</p>
+            <ol>
+              <li>Descarga el instalador desde python.org.</li>
+              <li>
+                Ejecuta el instalador y selecciona la opción "Add Python to
+                PATH".
+              </li>
+              <li>Completa la instalación.</li>
+            </ol>
+          </section>
+          <section class="secondary-section">
+            <p>En macOS</p>
+            <ol>
+              <li>Abre la Terminal.</li>
+              <li>
+                Usa Homebrew para instalar Python:
+                <code>brew install python</code>
+              </li>
+            </ol>
+          </section>
+          <section class="secondary-section">
+            <p>En Linux</p>
+            <ol>
+              <li>Abre la Terminal.</li>
+              <li>
+                Usa el gestor de paquetes de tu distribución para instalar
+                Python. Por ejemplo, en Ubuntu:
+                <code>sudo apt-get install python3</code>
+              </li>
+            </ol>
+          </section>
+        </section>
+        <section class="secondary-section">
+          <header>Hola mundo</header>
+          <p>
+            El clásico "Hola Mundo" en Python se puede escribir en una sola
+            línea:
+          </p>
+          <code>print("Hola, Mundo!")</code>
+        </section>
+        <section class="secondary-section">
+          <header>Variables y Tipos de Datos</header>
+          <code
+            ># Definición de variables nombre = "Juan" edad = 30 estatura = 1.75
+            es_estudiante = True # Imprimir tipos de datos print(type(nombre)) #
+            <class 'str'> print(type(edad)) # <class 'int'>
+            print(type(estatura)) # <class 'float'> print(type(es_estudiante)) #
+            <class 'bool'>
+          </code>
+        </section>
+        <section class="secondary-section">
+          <header>Estructuras de Control de Flujo</header>
+          <p>Condicionales</p>
+          <code
+            >edad = 18 if edad >= 18: print("Eres mayor de edad.") else:
+            print("Eres menor de edad.")
+          </code>
+          <p>Bucles</p>
+          <code
+            ># Bucle for for i in range(5): print(i) # Bucle while contador = 0
+            while contador < 5: print(contador) contador += 1
+          </code>
+        </section>
+        <section class="secondary-section">
+          <header>Funciones</header>
+          <code
+            >def saludar(nombre): return f"Hola, {nombre}!"
+            print(saludar("Juan"))
+          </code>
+        </section>
+      </section>
+      <section class="main-section" id="Ejemplos_de_Codigo">
+        <header>Ejemplos de Codigo</header>
+        <article>
+          <p>Manipulación de Listas</p>
+          <code
+            ># Crear una lista frutas = ["manzana", "banana", "cereza"] # Añadir
+            un elemento frutas.append("naranja") # Eliminar un elemento
+            frutas.remove("banana") # Acceder a un elemento print(frutas[1]) #
+            "cereza" # Recorrer una lista for fruta in frutas: print(fruta)
+          </code>
+          <p>Trabajar con Diccionarios</p>
+          <code
+            ># Crear un diccionario persona = { "nombre": "Juan", "edad": 30,
+            "ciudad": "Madrid" } # Acceder a un valor print(persona["nombre"]) #
+            "Juan" # Añadir un par clave-valor persona["email"] =
+            "juan@example.com" # Eliminar un par clave-valor del
+            persona["ciudad"] # Recorrer un diccionario for clave, valor in
+            persona.items(): print(f"{clave}: {valor}")
+          </code>
+          <p>Lectura y Escritura de Archivos</p>
+          <code
+            ># Escribir en un archivo with open("archivo.txt", "w") as archivo:
+            archivo.write("Hola, Mundo!") # Leer desde un archivo with
+            open("archivo.txt", "r") as archivo: contenido = archivo.read()
+            print(contenido)
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Guias_para_Resolver_Problemas_Comunes">
+        <header>Guias para Resolver Problemas Comunes</header>
+        <section class="secondary-section">
+          <header>Manejo de Errores y Excepciones</header>
+          <code
+            >try: # Código que puede lanzar una excepción resultado = 10 / 0
+            except ZeroDivisionError: print("Error: División por cero.") except
+            Exception as e: print(f"Ocurrió un error: {e}") finally: print("Este
+            bloque se ejecuta siempre.")
+          </code>
+        </section>
+        <section class="secondary-section">
+          <header>Uso de Librerías Externas</header>
+          <p class="no-code">
+            Python tiene una gran cantidad de librerías disponibles a través de
+            <a href="https://pypi.org/">PyPI</a>. Para instalar una librería, se
+            usa <code>pip</code>. Por ejemplo, para instalar
+            <code>requests</code>:
+            <code>pip install requests </code>
+          </p>
+          <p>Y luego, puedes usarla en tu código:</p>
+          <code
+            >import requests respuesta = requests.get("https://api.github.com")
+            datos = respuesta.json() print(datos)
+          </code>
+        </section>
+        <section class="secondary-section">
+          <header>Comprensión de Listas</header>
+          <p>
+            La comprensión de listas permite crear listas de manera concisa:
+          </p>
+          <code
+            >numeros = [1, 2, 3, 4, 5] cuadrados = [n**2 for n in numeros]
+            print(cuadrados) # [1, 4, 9, 16, 25]
+          </code>
+        </section>
+        <section class="secondary-section">
+          <header>Manipulación de Cadenas de Texto</header>
+          <code
+            >texto = " Hola, Mundo! " # Eliminar espacios en blanco texto =
+            texto.strip() # Convertir a mayúsculas texto = texto.upper() #
+            Reemplazar texto texto = texto.replace("MUNDO", "Python")
+            print(texto) # "HOLA, PYTHON!"
+          </code>
+        </section>
+      </section>
+      <section class="main-section" id="Referencias">
+        <header>Referencias</header>
+        <article>
+          <p></p>
+          <ol>
+            <li>
+              <a target="_blank" href="https://docs.python.org/3/"
+                >Python Documentation</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://realpython.com/">Real Python</a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.w3schools.com/python/default.asp"
+                >W3Schools Python Tutorial</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://www.pythonforbeginners.com/"
+                >Python for Beginners</a
+              >
+            </li>
+          </ol>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
